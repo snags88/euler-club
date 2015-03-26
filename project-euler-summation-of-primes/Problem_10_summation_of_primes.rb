@@ -2,7 +2,6 @@
 
 # Find the sum of all the primes below two million.
 
-
 # To solve this problem user Sieve of Eratosthenes.
 # The basis is to go through min through limit numbers and eliminating incremental values.
 
