@@ -9,7 +9,6 @@
 def last_person(seats)
   # build chairs array
 
-
 end
 
 

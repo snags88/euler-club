@@ -21,7 +21,6 @@ var makeChange = function(total, coins) {
 
   var map_result = coins.sort(function(a, b){return b-a}).map(function(coin){
     var coinCount = total / coin;
-
     total %= coin;
 
     var result = new Array();

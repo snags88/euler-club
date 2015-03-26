@@ -16,9 +16,7 @@ def random_string(num)
 
   password = ""
 
-  num.times do
-    password << array[rand(62)].to_s
-  end
+  num.times { password << array[rand(62)].to_s }
 
   password
   

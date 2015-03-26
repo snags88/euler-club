@@ -40,6 +40,3 @@ def make_change(total, coins)
     Array.new(coin_count){coin} #=> [25], [10], [1,1,1,1]
 
 end.flatten
-
-
-

@@ -19,6 +19,5 @@ Javascript range function: http://stackoverflow.com/questions/3895478/does-javas
 function lastChair(numberOfChairs) {
 }
 
-
 // Test section
 console.log('Last chair is', lastChair(100));
