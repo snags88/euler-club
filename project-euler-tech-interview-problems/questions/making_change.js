@@ -14,6 +14,22 @@
 
 var coins = [25, 10, 5, 1];
 
+// FUNCTION NOT WORKING YET - see solution in solution folder
 var makeChange = function(total, coins) {
 
+  var total = total;
+
+  var map_result = coins.sort(function(a, b){return b-a}).map(function(coin){
+    var coinCount = total / coin;
+
+    total %= coin;
+
+    var result = new Array();
+
+    for (var i = 0; i < coinCount; i++){
+      result.push(coin);
+    }
+    return result;
+  }); 
+  return map_result;
 };

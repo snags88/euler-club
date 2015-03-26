@@ -5,10 +5,12 @@
 # Resources:
 # Ruby Array Class: http://ruby-doc.org/core-2.2.0/Array.html
 # http://codereview.stackexchange.com/questions/15958/generating-a-random-alphanumeric-string-succinctly-and-efficiently
+# * operator : http://stackoverflow.com/questions/918449/what-does-the-unary-operator-do-in-this-ruby-code
+# more on *  : http://pivotallabs.com/ruby-pearls-vol-1-the-splat/
 
 # => returns max of 62 characters
 def random_string_limited(num)
-  array = [('a'..'z'), ('A'..'Z'), (0..9)].map { |n| n.to_a }.flatten
+  array = [('a'..'z'), ('A'..'Z'), (0..9)].collect { |n| n.to_a }.flatten
   array.shuffle[0..num-1].join
 end
 

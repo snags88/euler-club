@@ -18,9 +18,28 @@
 coins = [1,10,5,25]
 
 def make_change(total, coins)
+  # subtract coins from total
+  # collect
+
+  coins.sort.reverse.collect do |coin|
+
+    # check each coin
+    # start with highest coin
+    # subtract that coin from total, continue iterating
+
+    coin_count = total/coin
+    # x = 39/25
+    # x = 1
 
 
-end
+    total = total % coin
+
+    total %= coin
+    #total = 39/25 => 14
+
+    Array.new(coin_count){coin} #=> [25], [10], [1,1,1,1]
+
+end.flatten
 
 
 
