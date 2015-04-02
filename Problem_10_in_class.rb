@@ -11,7 +11,6 @@ Find the sum of all the primes below two million.
 
 def primes_up_to(num) #=> array of prime numbers
 flag_array = (0..num).collect{true}
-
 search_limit = (num ** 0.5)
 
   for i in 2..search_limit
